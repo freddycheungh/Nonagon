@@ -1,6 +1,6 @@
 /* NOTE: Yes! this is a TERRIBLE way to apply this, it's just a quick prototype.
-         End product will envolver CANVAS rendering if the idea is a good to go.
-         and possibly the use of react.js since it uses virtual doms and it's
+         End product will involve CANVAS rendering if the idea is a good to go
+         and possibly the use of react.js since it uses virtual doms which is
          unargueably faster when it comes to rendering in the browser. */
          
 $(document).ready(function() {
