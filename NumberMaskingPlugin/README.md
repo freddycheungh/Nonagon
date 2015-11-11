@@ -1,9 +1,8 @@
-# Nonagon
-This plugin was created during my first days with JavaScript (zero to no knowledge with language). Yes, this is one of the worst way to accomplish such simple task … 
+# Nonagon - NumberMaskingPlugin
+This plugin was created during my first days with JavaScript (zero to basic knowledge with the language). Yes, this is one of the worst way to accomplish such simple task … 
 As I’ve gotten better with JavaScript, I’ve taken some time to develop an improved version of this plugin (Still to be completed). 
 
-Its main purpose is to format a currency amount within an input text box. Back then, I was given the task to research on a number masking plugin, but many peers didn’t like 
-the amount of external sources we were using (this was making our code hard to maintain) so I decided to create a simple plugin that would meet simple requirements.
+Its main purpose is to format a currency amount within an input text box. Back then, I was given the task to research on a number masking plugin, but many peers didn’t like the amount of external sources we were using already (this was making our code hard to maintain) so I decided to create a simple plugin that would meet simple requirements.
 
 The plugin can mask rates, percentages, year, and numbers (only).
 
