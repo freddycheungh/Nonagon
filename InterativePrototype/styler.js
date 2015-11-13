@@ -5,7 +5,7 @@
          
 $(document).ready(function() {
     
-    $("body").mousemove(function(e) {
+    $(".main-content").mousemove(function(e) {
         
         var span = $("<span/>",{"class":"randomGenerated"});
         
@@ -20,7 +20,7 @@ $(document).ready(function() {
         
         setTimeout(function() {
             
-            $(".randomGenerated:first-child").remove();
+            $("span:first-child").remove();
   
         },1000);
 
