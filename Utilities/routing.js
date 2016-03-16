@@ -74,8 +74,8 @@ var router = router || {};
             //if want, we can check for history.state.view here
             if (document.location.pathname != "/") {
 
-                var newUrl = document.location.href.substr(0, document.location.href.lastIndexOf("/") + 1) + page;
-                history.replaceState({view: page}, null, newUrl);
+                var url = document.location.href.substr(0, document.location.href.lastIndexOf("/") + 1) + page;
+                history.replaceState({view: page}, null, url);
                 
             }
             
