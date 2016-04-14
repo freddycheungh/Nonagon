@@ -1,0 +1,54 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 550px;
+}
+
+#audio-player {
+    border: solid;
+    height: 60px;
+    margin: auto;
+    width: 90%;
+}
+
+.playbutton {
+    background: url('../icons/play.png');
+}
+
+.pausebutton {
+    background: url('../icons/pause.png');
+}
+
+.pausebutton, .playbutton {
+    background: {
+        size: 50% 50%;
+        repeat: no-repeat;
+        position: center;
+    }
+    border: none;
+    cursor: pointer;
+    float: left;
+    height: 60px;
+    outline: none;
+    width: 60px;
+}
+
+.playtime {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    cursor: pointer;
+    float: left;
+    height: 20px;
+    margin-top: 20px;
+    width: 80%;
+}
+
+.tracker {
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 50%;
+    cursor: pointer;
+    height: 18px;
+    margin-top: 1px;
+    width: 18px;
+}

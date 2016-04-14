@@ -1,0 +1,59 @@
+/* line 1, ../musicplayer.scss */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 550px;
+}
+
+/* line 8, ../musicplayer.scss */
+#audio-player {
+  border: solid;
+  height: 60px;
+  margin: auto;
+  width: 90%;
+}
+
+/* line 15, ../musicplayer.scss */
+.playbutton {
+  background: url("../icons/play.png");
+}
+
+/* line 19, ../musicplayer.scss */
+.pausebutton {
+  background: url("../icons/pause.png");
+}
+
+/* line 23, ../musicplayer.scss */
+.pausebutton, .playbutton {
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  float: left;
+  height: 60px;
+  outline: none;
+  width: 60px;
+}
+
+/* line 37, ../musicplayer.scss */
+.playtime {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  cursor: pointer;
+  float: left;
+  height: 20px;
+  margin-top: 20px;
+  width: 80%;
+}
+
+/* line 47, ../musicplayer.scss */
+.tracker {
+  background-color: black;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 18px;
+  margin-top: 1px;
+  width: 18px;
+}
