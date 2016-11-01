@@ -84,7 +84,7 @@ var router = router || {};
 
             }
 			
-	    });
+	});
 
     };
 
