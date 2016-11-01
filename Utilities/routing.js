@@ -7,42 +7,40 @@ var router = router || {};
 
 	var map = function (view) {
 		
-		// Holds the path of the view/hmtl
-		var path;
-		// Holds the path and the file name that it's going to be appended to the view/html
-		var jsFile;
-		// Holds the identifier (parent) element to which the JS will be loaded to
-		var appendTo;
-        
-		var root = document.location.origin + document.location.pathname;
-	
-		switch (view) {
-
-			case "project-nonagon" :
-				path = root + "views/project-nonagon.html"; //html name
-				jsFile = root + "js/project-nonagon.js";    //javascript/controller name
-				appendTo = "project-nonagon";               //identifier (where it will be appended to)
-			break;
-			
-            		case "project-undecagon" :
-				path = root + "views/project-undecagon.html"; //html name
-				jsFile = root + "js/project-undecagon.js";    //javascript/controller name
-				appendTo = "project-undecagon";               //identifier (where it will be appended to)
-			break;
+	    // Holds the path of the view/hmtl
+	    var path;
+	    // Holds the path and the file name that it's going to be appended to the view/html
+	    var jsFile;
+	    // Holds the identifier (parent) element to which the JS will be loaded to
+	    var appendTo;
             
-			default:
-				console.log("Invalid view");
-			break;
+	    var root = document.location.origin + document.location.pathname;
+	
+	    switch (view) {
 
-		}
+	        case "project-nonagon" :
+		    path = root + "views/project-nonagon.html"; //html name
+		    jsFile = root + "js/project-nonagon.js";    //javascript/controller name
+		    appendTo = "project-nonagon";               //identifier (where it will be appended to)
+		break;
+			
+                case "project-undecagon" :
+		    path = root + "views/project-undecagon.html"; //html name
+		    jsFile = root + "js/project-undecagon.js";    //javascript/controller name
+		    appendTo = "project-undecagon";               //identifier (where it will be appended to)
+		break;
+            
+		default:
+		    console.log("Invalid view");
+		break;
 
-		return {
+	    }
 
-			path,
-			jsFile,
-			appendTo
-
-		};
+	    return {
+	        path,
+	        jsFile,
+		appendTo
+	    };
 
 	};
 
@@ -65,11 +63,11 @@ var router = router || {};
 	   - The variable page is the page/view that is about to be loaded. */
 	scope.draw = function (page) {
 		
-		var location = map(page);
+	    var location = map(page);
     
 	    $("#content-holder").empty().load(location.path, function() {
 
-			addRespectiveJs(location);
+	    addRespectiveJs(location);
 
             //if want, we can check for history.state.view here
             if (document.location.pathname != "/") {
@@ -86,9 +84,9 @@ var router = router || {};
 
             }
 			
-		});
+	    });
 
-	};
+    };
 
     /* Acts as the workflow for the window's on pop state.*/
     scope.back = function (evt) {
