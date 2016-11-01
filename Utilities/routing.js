@@ -24,7 +24,7 @@ var router = router || {};
 				appendTo = "project-nonagon";               //identifier (where it will be appended to)
 			break;
 			
-            case "project-undecagon" :
+            		case "project-undecagon" :
 				path = root + "views/project-undecagon.html"; //html name
 				jsFile = root + "js/project-undecagon.js";    //javascript/controller name
 				appendTo = "project-undecagon";               //identifier (where it will be appended to)
@@ -49,7 +49,7 @@ var router = router || {};
 	/* Creates the script tag that will be appended to the corresponding views. */
 	var addRespectiveJs = function (obj) {
 
-		if (!obj.jsFile || !obj.appendTo) return false;
+	    if (!obj.jsFile || !obj.appendTo) return false;
 		
 	    var script = document.createElement('script');
 		
@@ -66,7 +66,7 @@ var router = router || {};
 	scope.draw = function (page) {
 		
 		var location = map(page);
-
+    
 		$("#content-holder").empty().load(location.path, function() {
 
 			addRespectiveJs(location);
