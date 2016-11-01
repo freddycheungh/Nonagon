@@ -67,7 +67,7 @@ var router = router || {};
 		
 		var location = map(page);
     
-		$("#content-holder").empty().load(location.path, function() {
+	    $("#content-holder").empty().load(location.path, function() {
 
 			addRespectiveJs(location);
 
