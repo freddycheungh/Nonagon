@@ -4,6 +4,6 @@ This is a Project that I will be updating with random code (either startups, thi
 
 My plan is to look back and track my improvement as well as store code that I can reuse. I have had several harddrive failure causing data lost.
 
-Update (04/04/2016):
+Update (10/31/2016):
 
-I've been working on sites such as: www.melanieawong.com, evergreenandbloom (eb.freddycheungh.com - to be released within the next days), and custom error pages (http://freddycheungh.com/error). 
+I've been working on sites such as: www.melanieawong.com, evergreenandbloom (eb.freddycheungh.com - a rebranding is required since the client is changing the company's name), a custom error pages (http://freddycheungh.com/error), and my main page http://freddycheungh.com. 
