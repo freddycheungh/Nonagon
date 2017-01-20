@@ -1,0 +1,267 @@
+@mixin col-1 {
+    width: 8.33%;
+}
+@mixin col-2 {
+    width: 16.66%;
+}
+@mixin col-3 {
+    width: 25%;
+}
+@mixin col-4 {
+    width: 33.33%;
+}
+@mixin col-5 {
+    width: 41.66%;
+}
+@mixin col-6 {
+    width: 50%;
+}
+@mixin col-7 {
+    width: 58.33%;
+}
+@mixin col-8 {
+    width: 66.66%;
+}
+@mixin col-9 {
+    width: 75%;
+}
+@mixin col-10 {
+    width: 83.33%;
+}
+@mixin col-11 {
+    width: 91.66%;
+}
+@mixin col-12 {
+    width: 100%;
+}
+
+// Extra small devices
+@mixin media-xs () {
+    // Less than 544px
+    @media (max-width: 543px) { 
+        @content;
+    }
+}
+
+// Small devices
+@mixin media-sm () {
+    // Greater or equal to 544px
+    @media (min-width: 544px) and (max-width: 767px) { 
+        @content;
+    }
+}
+
+// Medium devices 
+@mixin media-md () {
+    // Greater or equal to 768px
+    @media (min-width: 768px) and (max-width: 991px) { 
+        @content;
+    }
+}
+
+// Large devices
+@mixin media-lg () {
+    // Greater or equal to 992px 
+    @media (min-width: 992px) and (max-width: 1199px) { 
+        @content;
+     }
+}
+
+// Extra large devices
+@mixin media-xl () {
+    // Greater or equal to 1200px
+    @media (min-width: 1200px) { 
+        @content;
+    }
+}
+
+/* Grid System */
+.row {
+    //display: flex;
+    @include media-xs () {
+        display: initial;
+    }
+    @include media-sm () {
+        display: initial;
+    }
+    @include media-md () {
+        display: initial;
+    }
+}
+
+.column-1 {
+    @include col-1;
+    float: left;
+    @include media-xs () {
+        @include col-12;
+    }
+    @include media-sm () {
+        @include col-12;
+    }
+    @include media-md () {
+        @include col-12;
+    }
+}
+
+.column-2 {
+    @include col-2;
+    float: left;
+    @include media-xs () {
+        @include col-12;
+    }
+    @include media-sm () {
+        @include col-12;
+    }
+    @include media-md () {
+        @include col-12;
+    }
+}
+
+.column-3 {
+    @include col-4;
+    float: left;
+    @include media-xs () {
+        @include col-12;
+    }
+    @include media-sm () {
+        @include col-12;
+    }
+    @include media-md () {
+        @include col-12;
+    }
+}
+
+.column-4 {
+    @include col-4;
+    float: left;
+    @include media-xs () {
+        @include col-12;
+    }
+    @include media-sm () {
+        @include col-12;
+    }
+    @include media-md () {
+        @include col-12;
+    }
+}
+
+
+.column-5 {
+    @include col-5;
+    float: left;
+    @include media-xs () {
+        @include col-12;
+    }
+    @include media-sm () {
+        @include col-12;
+    }
+    @include media-md () {
+        @include col-12;
+    }
+}
+
+.column-6 {
+    @include col-6;
+    float: left;
+    @include media-xs () {
+        @include col-12;
+    }
+    @include media-sm () {
+        @include col-12;
+    }
+    @include media-md () {
+        @include col-12;
+    }
+}
+
+.column-7 {
+    @include col-7;
+    float: left;
+    @include media-xs () {
+        @include col-12;
+    }
+    @include media-sm () {
+        @include col-12;
+    }
+    @include media-md () {
+        @include col-12;
+    }
+}
+
+.column-8 {
+    @include col-8;
+    float: left;
+    @include media-xs () {
+        @include col-12;
+    }
+    @include media-sm () {
+        @include col-12;
+    }
+    @include media-md () {
+        @include col-12;
+    }
+}
+
+.column-10 {
+    @include col-10;
+    float: left;
+    @include media-xs () {
+        @include col-12;
+    }
+    @include media-sm () {
+        @include col-12;
+    }
+    @include media-md () {
+        @include col-12;
+    }
+}
+
+.column-11 {
+    @include col-11;
+    float: left;
+    @include media-xs () {
+        @include col-12;
+    }
+    @include media-sm () {
+        @include col-12;
+    }
+    @include media-md () {
+        @include col-12;
+    }
+}
+
+.column-12 {
+    @include col-12;
+    float: left;
+}
+
+.container {
+    width: 100%;
+    & * {
+        box-sizing: border-box;
+    }
+}
+
+.row:before, 
+.row:after {
+    content:"";
+    display: table ;
+    clear:both;
+}
+
+/* Utilities */
+
+/* NOTE: Always flexes content horizontally */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute
+}
